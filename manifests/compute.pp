@@ -89,7 +89,7 @@ class openstack::compute (
   $cinder_db_user                = 'cinder',
   $cinder_db_name                = 'cinder',
   $volume_group                  = 'cinder-volumes',
-  $iscsi_ip_address              = '127.0.0.1',
+  $iscsi_ip_address              = $internal_address,
   $setup_test_volume             = false,
   $cinder_rbd_user               = 'volumes',
   $cinder_rbd_pool               = 'volumes',
